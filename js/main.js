@@ -9,6 +9,7 @@ const app = new Vue(
 
         titolo: 'La tua frase motivazionale',
 
+        // ARRAY CON LE IMMAGINI
         immagine: [
             'https://picsum.photos/id/237/300/200',
             'https://picsum.photos/300/200',
@@ -19,6 +20,7 @@ const app = new Vue(
             'https://picsum.photos/id/112/300/200',
         ],
         
+        // ARRAY CON LE FRASI
         frasi: [
             'Non si è mai troppo vecchi per fissare un nuovo obiettivo o per sognare un nuovo sogno',
             'Non rinunciare a provare a fare ciò che vuoi veramente fare. Dove c’è amore e ispirazione, non credo che si possa sbagliare',
@@ -29,6 +31,7 @@ const app = new Vue(
             'Cadi sette volte, rialzati otto'
         ],
 
+        // INDICE
         index: 0
 
 
@@ -41,21 +44,13 @@ const app = new Vue(
                 // PROVA OPERATORE TERNARIO NON RIUSCITA
                 // this.index = (this.index === (this.frasi.length - 1))? 0 : +1;
 
+
+                // CONDIZIONE CON LA QUALE INCREMENTO L'INDICE
                  if(this.index === (this.frasi.length - 1)){
                      this.index = 0;
                  }else{
                      this.index ++;
                  }
-
-                
-                console.log(this.index);
-
-                if(this.index === (this.frasi.length - 1)){
-                    this.index = 0;
-                }else{
-                    this.index ++;
-                }
-
                
                console.log(this.index);
                 

@@ -92,4 +92,5 @@ button{
     background-color: #9656a1;
     font-family: 'RocknRoll One', sans-serif;
     color: #172c66;
+    cursor: pointer;
 }
