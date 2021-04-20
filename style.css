@@ -58,10 +58,19 @@ h2{
     font-size: 30px;
     padding: 30px;
     text-align: center;
+    position: relative;
+    
+}
+
+.card1 span{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate( -50%, -50%);
 }
 
 .card2{
-    width: 300px;
+    width: 400px;
     height: 300px;
     display: flex;
     justify-content: center;
@@ -70,5 +79,17 @@ h2{
 
 .card2 img{
     box-shadow: 5px 5px 10px rgb(69, 41, 41) ;
+    border-radius: 10px;
 }
 
+button{
+    width: 150px;
+    height:40px;
+    border-radius: 10px;
+    text-decoration: none;
+    box-shadow: 5px 5px 10px rgb(69, 41, 41) ;
+    border: none;
+    background-color: #9656a1;
+    font-family: 'RocknRoll One', sans-serif;
+    color: #172c66;
+}
